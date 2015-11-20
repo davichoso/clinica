@@ -1,0 +1,25 @@
+<div style="max-width:500px">
+    <table class="table table-striped text-center table-bordered">
+        <thead>
+            <tr class="text-center">
+            	<th> < </th>
+                <th colspan="5" class="picker-switch text-center">
+                    {{dat.months[month]}}
+                </th>
+                <th> > </th>
+            </tr>
+            <tr>
+            	<th class="text-center" ng-repeat="day in dat.days">{{day}}</th>
+            </tr>
+        </thead>
+        <tr ng-repeat="tr in monthdata">
+            <td ng-repeat="td in tr">
+            <input ng-if="td.s" type="checkbox" class="hide" id="{{td.f}}" ng-click="save()" >
+            <label ng-if="td.s" for="{{td.f}}">
+                    {{td.d}}
+               </label>
+               
+            </td>
+        </tr>
+    </table>
+</div>

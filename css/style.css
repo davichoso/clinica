@@ -1,0 +1,36 @@
+body {
+  margin: 50px;
+}
+
+.js-semantic-calendar {
+  min-height: 500px;
+  }
+.ui.calendar.grid {
+  border-radius: 0.2857rem;
+  box-shadow: 0px 0px 0px 1px #d4d4d5 !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+.ui.calendar.grid .column:not(.row) {
+  text-align: center !important;
+  width: 14.485714% !important;
+}
+.ui.calendar.grid .column:not(.row).disabled {
+  background-color: #efefef !important;
+  color: #d4d4d5 !important;
+  cursor: default !important;
+}
+.ui.calendar.grid .column:not(.row).grey {
+  background-color: #e0e0e0;
+  color: rgba(0, 0, 0, 0.6);
+}
+.ui.calendar.grid .column.disabled + .column.disabled {
+  box-shadow: -1px 0 0 0 #e7e7e8;
+}
+.table > tbody > tr > td { padding: 0}
+.table > tbody > tr > td > label { padding: 15px 0; margin: 0; width: 100%; cursor: pointer;} 
+.table > tbody > tr > td > label:hover { background-color: #5BC0DE} 
+.table > tbody > tr > td > input[type="checkbox"]:checked + label { background-color: #5CB85C !important; }
+
+
+
